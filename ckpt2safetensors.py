@@ -20,18 +20,8 @@ print("This script absolute path is ", absFilePath)
 path, filename = os.path.split(absFilePath)
 print("Script file path is {}, filename is {}".format(path, filename))
 
-
-def check_weight_type(k: str) -> str:
-    if k.startswith("model.diffusion_model"):
-        return "unet"
-    elif k.startswith("first_stage_model"):
-        return "vae"
-    elif k.startswith("cond_stage_model"):
-        return "clip"
-    return "other"
     
-    
-for (path, dir, files) in os.walk("models"):
+for (path, dir, files) in os.walk("models\\Stable-diffusion"):
     for f in files:
         f = os.path.join(path, f)
         print(f)
@@ -40,7 +30,7 @@ for (path, dir, files) in os.walk("models"):
             continue
             
         if f.lower().endswith("-fp16.safetensors"):
-            print(f'Skipping, as {fn} already exists.')
+            print(f'Skipping, as {f} already exists.')
             continue
         m=None
         if f.lower().endswith('.ckpt'):
