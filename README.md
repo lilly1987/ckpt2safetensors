@@ -4,6 +4,9 @@
 
 run stable-diffusion-webui/ckpt2safetensors.bat  
 
+
+![2023-03-18 02 39 45](https://user-images.githubusercontent.com/20321215/225978742-59ecf1c0-1c45-4dcd-99c4-3b4fcdcae83a.png)
+
 ex.ckpt to ex-fp16.safetensors  
 ex.safetensors to ex-fp16.safetensors  
 ex-fp16.safetensors to not converting  
