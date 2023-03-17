@@ -10,5 +10,6 @@ run stable-diffusion-webui/ckpt2safetensors.bat
 ex.ckpt to ex-fp16.safetensors  
 ex.safetensors to ex-fp16.safetensors  
 ex-fp16.safetensors to not converting  
+and rename ex.~.bak
 
 ![2023-03-18 02 43 50](https://user-images.githubusercontent.com/20321215/225979659-d769ee05-6872-4897-8022-c9e03da3bc8a.png)
